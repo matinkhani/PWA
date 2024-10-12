@@ -1,0 +1,33 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+ul li {
+  border: 1px solid #ccc;
+  width: 400px;
+  text-align: center;
+  margin-top: 10px;
+}

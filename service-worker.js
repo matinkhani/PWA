@@ -30,3 +30,17 @@ self.addEventListener("fetch", function (event) {
     })
   );
 });
+
+self.addEventListener("push", function (event) {
+  let data = {};
+  if (event.data) {
+    data = event.data.json();
+  }
+
+  const options = {
+    body: data.body,
+    icon: "/icons/icon-512x512.png",
+  };
+
+  event.waitUntil(self.registration.showNotification(data.title, options));
+});
